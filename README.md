@@ -94,3 +94,9 @@ Isso foi corrigido alterando o índice inicial para 0.
 
 A nota mínima para recuperação estava incorreta: era 6.5.
 Ela foi ajustada para 5.0, seguindo as regras da escola.
+
+### Bug 3: Regra de aprovação restrita
+
+O operador de comparação estrita (`>`) barrava alunos com nota exatamente
+igual a 7.0. O problema foi resolvido adotando o operador maior ou igual
+(`>=`).
