@@ -6,4 +6,9 @@ class BoletimSpec extends Specification {
         expect:
         new Boletim().calcularMedia([8.0, 7.0, 9.0]) == 8.0
     }
+
+    def "classifica aluno entre a média de recuperação e a de aprovação"() {
+        expect:
+        new Boletim().situacao(6.0, 7.0, 5.0) == "Recuperação"
+    }
 }
