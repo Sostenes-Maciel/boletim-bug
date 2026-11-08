@@ -82,3 +82,10 @@ primeiro acerto.
 - [ ] A média de todos os alunos está igual à esperada
 - [ ] A situação de todos os alunos está igual à esperada
 - [ ] Consigo explicar, com minhas palavras, cada bug que corrigi
+
+## Sobre os bugs corrigidos
+
+### Bug 1: Erro no cálculo da média
+
+A primeira nota estava sendo ignorada porque o laço começava no índice 1.
+Isso foi corrigido alterando o índice inicial para 0.
