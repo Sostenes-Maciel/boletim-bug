@@ -11,4 +11,9 @@ class BoletimSpec extends Specification {
         expect:
         new Boletim().situacao(6.0, 7.0, 5.0) == "Recuperação"
     }
+
+    def "aprova aluno com média exatamente igual ao limite de aprovação"() {
+        expect:
+        new Boletim().situacao(7.0, 7.0, 5.0) == "Aprovado"
+    }
 }
