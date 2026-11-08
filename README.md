@@ -89,3 +89,8 @@ primeiro acerto.
 
 A primeira nota estava sendo ignorada porque o laço começava no índice 1.
 Isso foi corrigido alterando o índice inicial para 0.
+
+### Bug 2: Limite de recuperação
+
+A nota mínima para recuperação estava incorreta: era 6.5.
+Ela foi ajustada para 5.0, seguindo as regras da escola.
